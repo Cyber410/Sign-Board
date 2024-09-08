@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    height: 100vh; /* Make the body cover the entire viewport height */
+    width:100%;
+}
+
+header {
+    flex-grow: 1;
+    flex-shrink: 0; /* Prevent shrinking */
+    flex-basis: 0; /* Initial size before growing/shrinking */
+    font-size: 2.5rem;
+    font-family: cursive;
+    font-style: italic;
+}
+
+#Sign-area {
+   
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    flex-grow: 8;
+    flex-shrink: 0; 
+    flex-basis: 0; 
+    box-shadow: 0 0  2px 3px rgba(0,0,0,0.5);
+}
+
+#draw-here,#type-here{
+    margin-bottom: 30px;
+}
+
+#draw-here{
+    border: solid; 
+}
+
+/*canvas{
+    height: 50%; :) error
+    width: 50%;
+}*/
+
+.Values{
+    display:flex;
+    gap:10px;
+   margin-bottom: 20px;
+}
+
+@media screen and (min-width:1001px){
+    #text-container{
+        margin:15px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+
+    input{
+       
+        margin-top: 27px;
+    }
+    
+   
+    
+}
+
+@media screen and (max-width:1000px) {
+    .Values{
+        display:flex;
+        flex-direction: column;
+        gap:15px;
+    }
+
+    #text-container{
+        margin:15px;
+    }
+    
+    .button{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px;
+    }
+    
+}

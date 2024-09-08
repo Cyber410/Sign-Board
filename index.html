@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <meta lang="UTF-8">
+        <meta name="author" content="DEV Kumar">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title> Secure Signature</title>
+       <link rel="stylesheet" href="main.css">
+
+    </head>
+
+    <body>
+        <header>
+           <div>Secure Signature</div>
+        </header>
+
+        <div id="Sign-area">
+            <div class="Values"> 
+                <div class="values-wrap">
+                    <label for="bg-color" >Background-color: </label>
+                    <input type="text" id="bg-color">
+                </div>
+                
+                <div class="values-wrap">
+                    <label for="pen-color" >Pen color:</label>
+                    <input type="text" id="pen-color">
+                </div>
+                
+                <div class="values-wrap">
+                    <label for="Font-size" >Font Size: </label>
+                    <input type="text" id="Font-size">
+                </div>
+                
+
+            </div>
+            <canvas id="draw-here"></canvas>
+            <form id="text-container">
+                
+                    <label for="type-here" >Type Here: </label>
+                    <input type="text" id="type-here" maxlength="10">
+                
+                
+                <div class="button">
+                    <button id="clear">Clear</button>
+                    <button id="download">Download</button>
+                </div>
+                
+            </form>
+           
+        </div>
+
+       
+        <script src="index.js"></script>
+    </body>
+</HTML>
